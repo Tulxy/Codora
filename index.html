@@ -9,27 +9,28 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body class="bg-light">
+<body class="bg-dark">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow fixed-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon text-white"></span>
     </button>
+    <i class="bi bi-code-slash text-white display-5 fw-bold"></i>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto py-2">
-        <li class="nav-item bg-light rounded">
+      <ul class="navbar-nav ms-auto py-2 gap-3">
+        <li class="nav-item bg-light rounded-4">
           <a class="nav-link active " aria-current="page" href="#">Domů</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">O nás</a>
+          <a class="nav-link text-light" href="#about">O nás</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Služby</a>
+          <a class="nav-link text-light" href="#service">Služby</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Kontakt</a>
+          <a class="nav-link text-light" href="#contact">Kontakt</a>
         </li>
       </ul>
     </div>
@@ -49,8 +50,8 @@
   </div>
 </header>
 
-<section id="about">
-  <div class="container mt-5">
+<section id="about" class="bg-light mt-5">
+  <div class="container mt-5 vh-100 d-flex flex-column justify-content-center align-items-center">
     <div class="row align-items-center flex-column-reverse flex-lg-row">
       <div class="col-lg-6">
         <img src="https://placehold.co/600x400" alt="">
@@ -78,6 +79,7 @@
             <h3>Tvorba webových stránek</h3>
             <p>Navrhujeme a vyvíjíme moderní, responzivní weby přizpůsobené vašim potřebám a cílové skupině.</p>
             <h5 class="fw-bolder">od 5 000Kč</h5>
+            <a class="btn btn-primary mt-2" href="#">Koupit</a>
           </div>
         </div>
       </div>
@@ -90,6 +92,7 @@
             <h3>E-shopy na míru</h3>
             <p>Vytváříme funkční a přehledné e-shopy, které podporují růst vašeho podnikání a zvyšují konverze.</p>
             <h5 class="fw-bolder">od 50 000Kč</h5>
+            <a class="btn btn-primary mt-2" href="#">Koupit</a>
           </div>
         </div>
       </div>
@@ -101,14 +104,99 @@
             <h3>Správa a údržba webů</h3>
             <p>Postaráme se o bezproblémový chod vašeho webu, jeho aktualizace, zabezpečení i technickou podporu.</p>
             <h5 class="fw-bolder">od 2 000Kč</h5>
-            <a class="btn btn-primary" href="#">Koupit</a>
+            <a class="btn btn-primary mt-2" href="#">Koupit</a>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="text-center mt-4">
+      <a class="btn btn-primary rounded-5 px-4 py-2" href="">Zobrazit více</a>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="FAQ" class="bg-light py-5">
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is the purpose of this website?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            This website is designed to provide information and services to users, including detailed product descriptions, FAQs, and customer support.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I contact customer support?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can contact customer support through our contact page or by emailing support@yourwebsite.com.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What payment methods are accepted?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept various payment methods, including credit cards, PayPal, and bank transfers.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 </section>
+
+<section id="contact" class="bg-dark mt-5">
+  <div class="container py-5 mx-auto d-flex flex-lg-row justify-content-between align-items-center">
+    <div class="col-lg-6">
+      <form class="bg-dark p-4 text-white rounded-4" action="">
+        <div class="row">
+          <div class="col">
+            <label for="name" class="form-label">Jméno:</label>
+            <input type="text" id="name" class="form-control" placeholder="Jméno">
+          </div>
+          <div class="col">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" id="email" class="form-control" placeholder="example@gmail.com">
+          </div>
+        </div>
+
+        <label for="message"></label>
+        <textarea id="message" class="form-control" placeholder="Zpráva"></textarea>
+
+        <div>
+          <button class="btn btn-outline-primary p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 mt-2 mx-auto container-fluid" type="submit"><i class="bi bi-send me-2"></i>Odeslat</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-lg-6 text-center">
+      <i class="bi bi-envelope-paper text-white display-1"></i>
+    </div>
+
+  </div>
+</section>
+
+<footer id="footer" class="bg-dark text-center p-4">
+  <p class="text-white">&copy Vytvořil Tomáš Vylímec</p>
+</footer>
 
 
 <script src="./js/bootstrap.bundle.min.js"></script>
