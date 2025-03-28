@@ -245,7 +245,6 @@
     const heading = card.querySelector('.card-heading');
     const paragraph = card.querySelector('.card-paragraph');
 
-    // Toggle visibility on hover
     if (heading.style.display !== 'none') {
       heading.style.display = 'none';
       paragraph.style.display = 'block';
@@ -255,7 +254,6 @@
     }
   }
 
-  // Initially hide the paragraph on page load
   document.querySelectorAll('.card-paragraph').forEach(paragraph => {
     paragraph.style.display = 'none';
   });
