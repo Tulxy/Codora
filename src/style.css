@@ -11845,31 +11845,55 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.bg-orange {
-  background-color: #ED6A5A;
+.bg-purple {
+  background-color: #6600ff;
 }
 
-.landing-p {
-  height: 60dvh;
+.purple {
+  color: #6600ff;
+}
+
+.contact-icon {
+  font-size: 220px;
 }
 
 .xl-text {
-  font-size: 8rem;
+  font-size: 7rem;
+}
+@media (max-width: 1200px) {
+  .xl-text {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .xl-text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .xl-text {
+    font-size: 2.5rem;
+  }
 }
 
-.navbar {
+.ul {
   transition: background-color 0.3s ease-in-out;
 }
-.navbar:hover {
+.ul:hover {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
-.navbar:hover .nav-link {
-  color: black !important;
+.ul:hover .nav-link {
+  color: #ffffff !important;
 }
-.navbar:hover .bi {
-  color: black !important;
+.ul:hover .bi {
+  color: #ED6A5A !important;
 }
-.navbar:hover .navbar-toggler {
+.ul:hover .navbar-toggler {
   background-color: black !important;
 }
 

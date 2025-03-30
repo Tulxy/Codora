@@ -2,35 +2,53 @@
 $primary: #ffffff;
 $dark: #3f3f3f;
 
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-.bg-orange {
-  background-color: #ED6A5A;
+.bg-purple {
+  background-color: #6600ff;
+}
+
+.purple {
+  color: #6600ff;
 }
 
 //#F1C40F
 
-.landing-p {
-  height: 60dvh;
+.contact-icon {
+  font-size: 220px;
 }
 
 .xl-text {
-  font-size: 8rem;
+  font-size: 7rem;
+
+  @media (max-width: 1200px) {
+    font-size: 5rem;
+  }
+  @media (max-width: 992px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 576px) {
+    font-size: 2.5rem;
+  }
 }
 
-.navbar {
+.ul {
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.3) !important;
 
     .nav-link {
-      color: black !important;
+      color: #ffffff !important;
     }
 
     .bi {
-      color: black !important;
+      color: #ED6A5A !important;
     }
 
     .navbar-toggler {
