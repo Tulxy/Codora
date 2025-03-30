@@ -5,50 +5,51 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <title>Codora</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-dark">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark shadow fixed-top">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-orange">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-orange mt-5 py-3">
   <div class="container">
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="index.html"><i class="bi bi-code-slash text-white display-5 fw-bold"></i></a>
+    <div class="nav-item">
+      <a href="index.html" class="text-decoration-none display-5 fw-bold fst-italic text-light">CODORA</a>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto py-2 gap-3">
         <li class="nav-item bg-light rounded-4">
-          <a class="nav-link active " aria-current="page" href="#">Domů</a>
+          <a class="nav-link active fw-bold" aria-current="page" href="#">Domů</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#about">O nás</a>
+          <a class="nav-link text-light fw-bold" href="#about">O nás</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#service">Služby</a>
+          <a class="nav-link text-light fw-bold" href="#service">Služby</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#contact">Kontakt</a>
+          <a class="nav-link text-light fw-bold" href="#contact">Kontakt</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="bg-dark text-white w-100 vh-100">
-  <div class="container d-flex flex-column justify-content-center h-100">
-    <div class="row">
-      <div class="col-md-6 col-lg-6 col-xl-5">
-        <h1 class="display-1 fw-bold" id="typing-text"></h1>
+<header class="bg-orange text-white w-100 landing-p">
+  <div class="container d-flex flex-column justify-content-center h-100 py-5">
+    <div class="row py-5">
+      <div class="col-md-6 col-lg-6 col-xl-8 py-5">
+        <h1 class="p-2 pb-2 fw-bold xl-text">Tvoříme weby, které zaujmou.</h1>
         <div>
-          <h1 class="p-2 pb-2 fw-light">Tvoříme weby, které zaujmou.</h1>
-          <p class="mb-4">Specializujeme se na tvorbu webových stránek, e-shopů, správu webů a další digitální služby –
+          <p class="mb-4 fs-4">Specializujeme se na tvorbu webových stránek, e-shopů, správu webů a další digitální služby –
             vše,<br>
             co váš web potřebuje.</p>
-          <a class="btn btn-primary mb-2 me-2" href="#about">O nás</a>
-          <a class="btn btn-outline-primary mb-2" href="#service">Nabídka služeb</a>
+          <a class="btn btn-primary mb-2 me-2 rounded-5" href="#about">O nás</a>
+          <a class="btn btn-outline-primary mb-2 rounded-5" href="#service">Nabídka služeb</a>
         </div>
       </div>
     </div>
@@ -56,8 +57,8 @@
 </header>
 
 
-<section id="about" class="bg-light mt-5">
-  <div class="container mt-5 vh-100 d-flex flex-column justify-content-center align-items-center">
+<section id="about" class="bg-light my-5 py-5">
+  <div class="container my-5 py-5 d-flex flex-column justify-content-center align-items-center">
     <div class="row align-items-center flex-column-reverse flex-lg-row">
       <div class="col-lg-6 col-md-8">
         <img src="https://placehold.co/600x400" alt="" class="img-fluid">
@@ -73,7 +74,7 @@
   </div>
 </section>
 
-<section id="service" class="bg-dark mt-5">
+<section id="service" class="bg-orange mt-5">
   <div class="container py-5">
     <div class="row justify-content-center">
 
@@ -132,45 +133,45 @@
   <div class="container my-5">
     <h2 class="text-center mb-4">Často kladené dotazy</h2>
     <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header " id="headingOne">
+          <button class="accordion-button bg-dark text-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
             Jaké služby nabízíte?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
              data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
+          <div class="accordion-body text-white">
             Nabízíme tvorbu moderních webových stránek, e-shopů na míru, správu webů a další digitální služby, které vám
             pomohou uspět v online světě.
           </div>
         </div>
       </div>
-      <div class="accordion-item">
+      <div class="accordion-item bg-dark text-white">
         <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             Jak dlouho trvá vytvoření webu?
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
              data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
+          <div class="accordion-body bg-dark text-white">
             Doba realizace závisí na složitosti projektu, obvykle se pohybuje mezi 2 až 6 týdny.
           </div>
         </div>
       </div>
-      <div class="accordion-item">
+      <div class="accordion-item bg-dark text-white">
         <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Jak mohu začít spolupracovat s vaší firmou?
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
              data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
+          <div class="accordion-body bg-dark text-white">
             Stačí nás kontaktovat přes kontaktní formulář na našich stránkách nebo nás přímo oslovit e-mailem a my se s
             vámi domluvíme na podrobnostech.
           </div>
@@ -180,7 +181,7 @@
   </div>
 </section>
 
-<section id="contact" class="bg-dark mt-5">
+<section id="contact" class="bg-orange mt-5">
   <div class="container py-5 mx-auto d-flex flex-lg-row flex-column justify-content-between align-items-center">
     <div class="col-lg-6 col-md-8">
       <form class="bg-dark p-4 text-white rounded-4" action="">
@@ -214,7 +215,7 @@
   </div>
 </section>
 
-<footer id="footer" class="bg-dark text-center p-4">
+<footer id="footer" class="bg-dark text-center py-5">
   <p class="text-white">&copy Vytvořil Tomáš Vylímec</p>
 </footer>
 
@@ -239,6 +240,8 @@
     </div>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
   function toggleTextVisibility(card) {
@@ -300,7 +303,7 @@
   });
 </script>
 
-<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="js/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>
