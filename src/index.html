@@ -7,6 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js"></script>
+
   <link rel="stylesheet" href="style.css">
   <title>Codora</title>
 </head>
@@ -39,7 +44,7 @@
   </div>
 </nav>
 
-<header class="bg-purple text-white w-100 landing-p">
+<header class="bg-purple text-white w-100 landing-p hidden">
   <div class="container d-flex flex-column justify-content-center h-100 py-5">
     <div class="row py-4">
       <div class="col-md-6 col-lg-6 col-xl-8">
@@ -60,7 +65,7 @@
 </header>
 
 
-<section id="about" class="bg-white my-5">
+<section id="about" class="bg-white my-5 hidden">
   <div class="container my-5 py-5 d-flex flex-column justify-content-center align-items-center">
     <div class="row align-items-center flex-column-reverse flex-lg-row">
       <div class="col-lg-6 col-md-8">
@@ -77,11 +82,11 @@
   </div>
 </section>
 
-<section id="service" class="bg-purple mt-5">
+<section id="service" class="bg-purple mt-5 hidden">
   <div class="container py-5">
     <div class="row justify-content-center">
 
-      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex hidden card-service">
         <div class="card shadow-lg rounded-5">
           <img src="https://img.freepik.com/free-vector/computer-service-abstract-concept-illustration_335657-1897.jpg?t=st=1743364521~exp=1743368121~hmac=4f8b1407c78a7a32dc2efe7f9d6f07666c7dd55c44b6f8a0ef18598e11a470fc&w=1380" alt="" class="img-fluid w-100 h-auto rounded-5" style="object-fit: cover;">
           <div class="card-body">
@@ -95,7 +100,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex hidden card-service">
         <div class="card shadow-lg rounded-5">
           <img src="https://img.freepik.com/free-vector/ordering-goods-online-internet-store-online-shopping-niche-e-commerce-website-mother-buying-babies-clothes-footwear-toys-infant-accessories-vector-isolated-concept-metaphor-illustration_335657-2764.jpg?t=st=1743363599~exp=1743367199~hmac=03a5d2e066bb622dea8c59b41b22661d005604214a8ea360f246478566ad3428&w=1380" alt="" class="img-fluid w-100 h-auto rounded-5" style="object-fit: cover;">
           <div class="card-body">
@@ -109,7 +114,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex hidden card-service">
         <div class="card shadow-lg rounded-5">
           <img src="https://img.freepik.com/free-vector/website-maintenance-abstract-concept-vector-illustration-website-service-webpage-seo-maintenance-web-design-corporate-site-professional-support-security-analysis-update-abstract-metaphor_335657-2295.jpg?t=st=1743363661~exp=1743367261~hmac=459d0e5184f041068418c5ce301ca9e45bd4204f1a2664213484a188fcc26990&w=1380" alt="" class="img-fluid w-100 h-auto rounded-5" style="object-fit: cover;">
           <div class="card-body">
@@ -132,7 +137,7 @@
 
 </section>
 
-<section id="FAQ" class="bg-white py-5">
+<section id="FAQ" class="bg-white py-5 hidden">
   <div class="container my-5">
     <h2 class="text-center mb-4">Často kladené dotazy</h2>
     <div class="accordion" id="faqAccordion">
@@ -184,7 +189,7 @@
   </div>
 </section>
 
-<section id="contact" class="bg-purple mt-5">
+<section id="contact" class="bg-purple mt-5 hidden">
   <div class="container py-5 mx-auto d-flex flex-lg-row flex-column justify-content-between align-items-center">
     <div class="col-lg-6 col-md-8">
       <form class="bg-dark p-4 text-white rounded-4" action="">
@@ -242,65 +247,10 @@
   </div>
 </div>
 
-<script>
-  function toggleTextVisibility(card) {
-    const heading = card.querySelector('.card-heading');
-    const paragraph = card.querySelector('.card-paragraph');
 
-    if (heading.style.display !== 'none') {
-      heading.style.display = 'none';
-      paragraph.style.display = 'block';
-    } else {
-      heading.style.display = 'block';
-      paragraph.style.display = 'none';
-    }
-  }
+<script src="script.js"></script>
 
-  document.querySelectorAll('.card-paragraph').forEach(paragraph => {
-    paragraph.style.display = 'none';
-  });
 
-  const products = [
-    {
-      id: 1,
-      title: 'Tvorba webových stránek',
-      description: 'Navrhujeme a vyvíjíme moderní, responzivní weby přizpůsobené vašim potřebám a cílové skupině.',
-      price: 'od 5 000 Kč',
-      image: 'https://placehold.co/600x400',
-    },
-    {
-      id: 2,
-      title: 'E-shopy na míru',
-      description: 'Vytváříme funkční a přehledné e-shopy, které podporují růst vašeho podnikání a zvyšují konverze.',
-      price: 'od 50 000 Kč',
-      image: 'https://placehold.co/600x400',
-    },
-    {
-      id: 3,
-      title: 'Správa a údržba webů',
-      description: 'Postaráme se o bezproblémový chod vašeho webu, jeho aktualizace, zabezpečení i technickou podporu.',
-      price: 'od 2 000 Kč',
-      image: 'https://placehold.co/600x400',
-    },
-  ];
-
-  function openModal(productId) {
-    const product = products.find(p => p.id === productId);
-    document.getElementById('modalImage').src = product.image;
-    document.getElementById('modalTitle').textContent = product.title;
-    document.getElementById('modalDescription').textContent = product.description;
-    document.getElementById('modalPrice').textContent = product.price;
-    const modal = new bootstrap.Modal(document.getElementById('productModal'));
-    modal.show();
-  }
-
-  document.querySelectorAll('.open-modal').forEach(button => {
-    button.addEventListener('click', () => {
-      const productId = parseInt(button.getAttribute('data-product-id'));
-      openModal(productId);
-    });
-  });
-</script>
 
 </body>
 </html>
