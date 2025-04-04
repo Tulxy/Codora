@@ -13,6 +13,9 @@
   transition-delay: 200ms;
 }
 
+.card-service:nth-child(3) {
+  transition-delay: 400ms;
+}
 
 
 
